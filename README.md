@@ -1,4 +1,4 @@
-# algorithms
+# Algorithms
 
 Algorithmic training - solving problems and taking notes.
 
