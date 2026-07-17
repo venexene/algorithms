@@ -5,7 +5,7 @@ import "fmt"
 func main() {
 	ransomNote := "aa"
 	magazine := "aab"
-	result := canConstruct(ransomNote, magazine)
+	result := canConstructArr(ransomNote, magazine)
 	fmt.Println(result)
 }
 
@@ -13,12 +13,12 @@ func canConstructArr(ransomNote string, magazine string) bool {
 	arr := [26]int{}
 
 	for _, r := range magazine {
-		arr[r-"a"]++
+		arr[r-'a']++
 	}
 
 	for _, r := range ransomNote {
-		arr[r-"a"]--
-		if arr[r-"a"] < 0 {
+		arr[r-'a']--
+		if arr[r-'a'] < 0 {
 			return false
 		}
 	}
