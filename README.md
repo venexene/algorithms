@@ -4,6 +4,8 @@ Algorithmic training - solving problems and taking notes.
 
 ## Solved
 
+## Arrays & Strings
+
 - [x] [Two Sum](./arrs-and-strs/two-sum/) - hash map, two pointers, brute force
 - [x] [Contains Duplicate](./arrs-and-strs/contains-duplicate/) - hash set, sorting
 - [x] [Valid Anagram](./arrs-and-strs/valid-anagram/) - frequency array, hash map, sorting
@@ -13,3 +15,10 @@ Algorithmic training - solving problems and taking notes.
 - [x] [Group Anagrams](./arrs-and-strs/group-anagrams/) - hash map, sort key, frequency array key
 - [x] [Longest Substring Without Repeating Characters](./arrs-and-strs/longest-substring-without-repeating-characters/) - sliding window, map of positions
 - [x] [Longest Palindromic Substring](./arrs-and-strs/longest-palindromic-substring/) - expand around center
+
+## Hash Tables
+
+- [x] [Intersection of Two Arrays](./hash-tables/intersection-of-two-arrays/) — hash set, delete for uniqueness
+- [x] [Jewels and Stones](./hash-tables/jewels-and-stones/) — hash set lookup
+- [x] [Ransom Note](./hash-tables/ransom-note/) — frequency map, frequency array
+- [x] [First Unique Character in a String](./hash-tables/first-unique-character-in-a-string/) — frequency map, two passes
