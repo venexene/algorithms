@@ -19,12 +19,12 @@ func merge(nums1 []int, m int, nums2 []int, n int)  {
 			break
 		}
 
-		if n1 >= 0 && nums2[n1] > nums1[n2] {
-			nums1[i] = nums2[n2]
-			n2--
-		} else {
+		if n1 >= 0 && nums1[n1] > nums2[n2] {
 			nums1[i] = nums1[n1]
 			n1--
+		} else {
+			nums1[i] = nums2[n2]
+			n2--
 		}
 	}
 }
