@@ -22,3 +22,11 @@ Algorithmic training - solving problems and taking notes.
 - [x] [Jewels and Stones](./hash-tables/jewels-and-stones/) — hash set lookup
 - [x] [Ransom Note](./hash-tables/ransom-note/) — frequency map, frequency array
 - [x] [First Unique Character in a String](./hash-tables/first-unique-character-in-a-string/) — frequency map, two passes
+- [x] [Subarray Sum Equals K](./hash-tables/subarray-sum-equals-k/) — prefix sum + hash map
+- [x] [Top K Frequent Elements](./hash-tables/top-k-frequent-elements/) — min-heap, bucket sort
+- [x] [Longest Consecutive Sequence](./hash-tables/longest-consecutive-sequence/) — hash set, sequence start detection
+
+## Two Pointers
+
+- [x] [Two Sum II](./two-pointers/two-sum-2/) — two pointers on sorted array
+- [x] [Remove Element](./two-pointers/remove-element/) — write pointer, in-place
