@@ -30,3 +30,8 @@ Algorithmic training - solving problems and taking notes.
 
 - [x] [Two Sum II](./two-pointers/two-sum-2/) — two pointers on sorted array
 - [x] [Remove Element](./two-pointers/remove-element/) — write pointer, in-place
+- [x] [Merge Sorted Array](./two-pointers/merge-sorted-array/) — three pointers from the end
+
+## Sliding Window
+
+- [x] [Maximum Average Subarray I](./sliding-window/maximum-average-sum-i/) — fixed-size window
