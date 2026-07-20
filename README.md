@@ -31,7 +31,11 @@ Algorithmic training - solving problems and taking notes.
 - [x] [Two Sum II](./two-pointers/two-sum-2/) — two pointers on sorted array
 - [x] [Remove Element](./two-pointers/remove-element/) — write pointer, in-place
 - [x] [Merge Sorted Array](./two-pointers/merge-sorted-array/) — three pointers from the end
+- [x] [3Sum](./two-pointers/sum-3/) — sort + two pointers, hash map
+- [x] [Container With Most Water](./two-pointers/container-with-most-water/) — two pointers greedy
 
 ## Sliding Window
 
 - [x] [Maximum Average Subarray I](./sliding-window/maximum-average-sum-i/) — fixed-size window
+- [x] [Minimum Size Subarray Sum](./sliding-window/minimum-size-subarray-sum/) — variable-size window
+- [x] [Permutation in String](./sliding-window/permutation-in-string/) — fixed window + frequency counter
