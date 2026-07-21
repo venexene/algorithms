@@ -61,8 +61,10 @@ func (this *MyQueue) Pop() int {
 
 
 func (this *MyQueue) Peek() int {
-    for !this.funcStack.Empty() {
-		this.mainStack.Push(this.funcStack.Pop())
+     if this.mainStack.Empty() {
+		for !this.funcStack.Empty() {
+			this.mainStack.Push(this.funcStack.Pop())
+		}
 	}
 	return this.mainStack.Peek()
 }
