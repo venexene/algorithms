@@ -39,3 +39,12 @@ Algorithmic training - solving problems and taking notes.
 - [x] [Maximum Average Subarray I](./sliding-window/maximum-average-sum-i/) — fixed-size window
 - [x] [Minimum Size Subarray Sum](./sliding-window/minimum-size-subarray-sum/) — variable-size window
 - [x] [Permutation in String](./sliding-window/permutation-in-string/) — fixed window + frequency counter
+
+## Stack & Queue
+
+- [x] [Valid Parentheses](./stack-and-queue/valid-parentheses/) — stack
+- [x] [Implement Queue using Stacks](./stack-and-queue/implement-queue-using-stacks/) — two stacks, amortized O(1)
+- [x] [Baseball Game](./stack-and-queue/baseball-game/) — stack of ints
+- [x] [Min Stack](./stack-and-queue/min-stack/) — two stacks, history of mins
+- [x] [Evaluate Reverse Polish Notation](./stack-and-queue/evaluate-reverse-polish-notation/) — stack
+- [x] [Daily Temperatures](./stack-and-queue/daily-temperatures/) — monotonic decreasing stack
