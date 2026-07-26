@@ -55,3 +55,10 @@ Algorithmic training - solving problems and taking notes.
 - [x] [Search Insert Position](./binary-search/search-insert-position/) - binary search, return low
 - [x] [Sqrt(x)](./binary-search/sqrt-x/) - binary search on answer
 - [x] [Search in Rotated Sorted Array](./binary-search/search-in-rotated-sorted-array/) - one binary search, check sorted half
+- [x] [Find Minimum in Rotated Sorted Array](./binary-search/find-minimum-in-rotated-sorted-array/) - compare mid with high
+- [x] [Koko Eating Bananas](./binary-search/koko-eating-bananas/) - binary search on answer, ceil division
+
+## Linked Lists
+
+- [x] [Reverse Linked List](./linked-lists/reverse-linked-list/) - iterative, recursive
+- [x] [Merge Two Sorted Lists](./linked-lists/merge-two-sorted-lists/) - dummy node, tail pointer
