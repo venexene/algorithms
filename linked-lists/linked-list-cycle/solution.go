@@ -31,6 +31,7 @@ func hasCycleFloyd(head *ListNode) bool {
 
 	for fast != nil {
 		slow = slow.Next
+
 		fast = fast.Next
 		if fast == nil {
 			return false
