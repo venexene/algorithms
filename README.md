@@ -62,3 +62,7 @@ Algorithmic training - solving problems and taking notes.
 
 - [x] [Reverse Linked List](./linked-lists/reverse-linked-list/) - iterative, recursive
 - [x] [Merge Two Sorted Lists](./linked-lists/merge-two-sorted-lists/) - dummy node, tail pointer
+- [x] [Linked List Cycle](./linked-lists/linked-list-cycle/) - hash set, Floyd's algorithm
+- [x] [Middle of the Linked List](./linked-lists/middle-of-the-linked-list/) - fast & slow pointers
+- [x] [Intersection of Two Linked Lists](./linked-lists/intersection-of-two-linked-lists/) - hash set, two pointers equalizing distance
+- [x] [Remove Nth Node From End of List](./linked-lists/remove-nth-node-from-end-of-list/) - counter, dummy + fast/slow
