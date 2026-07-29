@@ -66,3 +66,9 @@ Algorithmic training - solving problems and taking notes.
 - [x] [Middle of the Linked List](./linked-lists/middle-of-the-linked-list/) - fast & slow pointers
 - [x] [Intersection of Two Linked Lists](./linked-lists/intersection-of-two-linked-lists/) - hash set, two pointers equalizing distance
 - [x] [Remove Nth Node From End of List](./linked-lists/remove-nth-node-from-end-of-list/) - counter, dummy + fast/slow
+- [x] [Add Two Numbers](./linked-lists/add-two-numbers/) - digit-by-digit with carry
+
+## Trees
+
+- [x] [Maximum Depth of Binary Tree](./trees/maximum-depth-of-binary-tree/) - DFS recursive
+- [x] [Same Tree](./trees/same-tree/) - DFS recursive comparison
