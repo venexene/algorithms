@@ -42,10 +42,16 @@ func removeNthFromEndDummy(head *ListNode, n int) *ListNode {
 	slow := dummy
 	fast := dummy
 
-	for i := 0; i < n; i++ {
+	for i := 0; i < n + 1; i++ {
 		fast = fast.Next
 	}
-	for fast != nil {
 
+	for fast != nil {
+		fast = fast.Next
+		slow = slow.Next
 	}
+
+	slow.Next = slow.Next.Next
+
+	return dummy.Next
 }

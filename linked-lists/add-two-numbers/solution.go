@@ -11,7 +11,7 @@ type ListNode struct {
 	Next *ListNode
 }
 
-func addTwoNumbersFirst(l1 *ListNode, l2 *ListNode) *ListNode {
+func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
     pred := 0
 	sum := 0
 	num1 := 0
@@ -41,5 +41,5 @@ func addTwoNumbersFirst(l1 *ListNode, l2 *ListNode) *ListNode {
 		tail = tail.Next
 	}
 
-	return tail
+	return dummy.Next
 }
