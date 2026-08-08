@@ -13,9 +13,9 @@ func validPath(n int, edges [][]int, source int, destination int) bool {
         return false
     }
     
-    visited := map[int]bool{}
+    visited := map[int]bool{} // можно использовать массив
 
-	adj := map[int][]int{}
+	adj := map[int][]int{} // можно использовать массив
 	for _, edge := range edges {
 		adj[edge[0]] = append(adj[edge[0]], edge[1])
 		adj[edge[1]] = append(adj[edge[1]], edge[0])
@@ -34,14 +34,14 @@ func validPathAdd(adj map[int][]int, source int, destination int, visited map[in
     res := false
     for _, vertex := range adj[source] {
 		if !visited[vertex] {
-			res = res || validPathAdd( adj, vertex, destination, visited)
+			res = res || validPathAdd(adj, vertex, destination, visited)
 		}
 	}
 	return res
 }
 
 func validPathUnionFind(n int, edges [][]int, source int, destination int) bool {
-	parent := map[int]int{}
+	parent := map[int]int{} // можно использовать массив
 
 	for i := 0; i < n; i++ {
 		parent[i] = i
