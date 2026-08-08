@@ -78,3 +78,10 @@ Algorithmic training - solving problems and taking notes.
 - [x] [Lowest Common Ancestor of a BST](./trees/lowers-common-ancestor-of-a-binary-search-tree/) - BST property shortcut
 - [x] [Binary Tree Right Side View](./trees/binary-tree-right-side-view/) - DFS right-first, depth tracking
 - [x] [Validate Binary Search Tree](./trees/validate-binary-search-tree/) - range passing top-down
+
+## Graphs
+
+- [x] [Find if Path Exists in Graph](./graphs/find-if-path-exists-in-graph/) - DFS + adjacency list, Union Find
+- [x] [Flood Fill](./graphs/flood-fill/) - DFS on matrix
+- [x] [Number of Islands](./graphs/number-of-islands/) - DFS flood fill, component counting
+- [x] [Clone Graph](./graphs/clone-graph/) - DFS + visited map (orig → clone)
