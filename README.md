@@ -72,3 +72,9 @@ Algorithmic training - solving problems and taking notes.
 
 - [x] [Maximum Depth of Binary Tree](./trees/maximum-depth-of-binary-tree/) - DFS recursive
 - [x] [Same Tree](./trees/same-tree/) - DFS recursive comparison
+- [x] [Invert Binary Tree](./trees/invert-binary-tree/) - DFS swap left/right
+- [x] [Path Sum](./trees/path-sum/) - DFS, leaf check
+- [x] [Binary Tree Level Order Traversal](./trees/binary-tree-level-order-traversal/) - BFS with level tracking
+- [x] [Lowest Common Ancestor of a BST](./trees/lowers-common-ancestor-of-a-binary-search-tree/) - BST property shortcut
+- [x] [Binary Tree Right Side View](./trees/binary-tree-right-side-view/) - DFS right-first, depth tracking
+- [x] [Validate Binary Search Tree](./trees/validate-binary-search-tree/) - range passing top-down
