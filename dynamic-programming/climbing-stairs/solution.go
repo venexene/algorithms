@@ -14,5 +14,5 @@ func climbStairs(n int) int {
     for i := 0; i < n; i++ {
 		s1, s2 = s2, s1+s2
 	}
-	return s2
+	return s1
 }
