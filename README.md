@@ -87,3 +87,10 @@ Algorithmic training - solving problems and taking notes.
 - [x] [Clone Graph](./graphs/clone-graph/) - DFS + visited map (orig → clone)
 - [x] [Course Schedule](./graphs/course-schedule/) - topological sort, DFS with 3 states
 - [x] [Pacific Atlantic Water Flow](./graphs/pacific-atlantic-water-flow/) - two DFS from borders, reverse direction
+
+## Dynamic Programming
+
+- [x] [Climbing Stairs](./dynamic-programming/climbing-stairs/) - Fibonacci, two variables
+- [x] [Min Cost Climbing Stairs](./dynamic-programming/min-cost-climbing-stairs/) - in-place DP, min of two paths
+- [x] [House Robber](./dynamic-programming/house-robber/) - in-place DP, max(skip, rob)
+- [x] [Maximum Subarray](./dynamic-programming/maximum-subarray/) - Kadane's algorithm, in-place
