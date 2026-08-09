@@ -85,3 +85,5 @@ Algorithmic training - solving problems and taking notes.
 - [x] [Flood Fill](./graphs/flood-fill/) - DFS on matrix
 - [x] [Number of Islands](./graphs/number-of-islands/) - DFS flood fill, component counting
 - [x] [Clone Graph](./graphs/clone-graph/) - DFS + visited map (orig → clone)
+- [x] [Course Schedule](./graphs/course-schedule/) - topological sort, DFS with 3 states
+- [x] [Pacific Atlantic Water Flow](./graphs/pacific-atlantic-water-flow/) - two DFS from borders, reverse direction
