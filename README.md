@@ -94,3 +94,7 @@ Algorithmic training - solving problems and taking notes.
 - [x] [Min Cost Climbing Stairs](./dynamic-programming/min-cost-climbing-stairs/) - in-place DP, min of two paths
 - [x] [House Robber](./dynamic-programming/house-robber/) - in-place DP, max(skip, rob)
 - [x] [Maximum Subarray](./dynamic-programming/maximum-subarray/) - Kadane's algorithm, in-place
+- [x] [Coin Change](./dynamic-programming/coin-change/) - DP with full coin iteration, minimization
+- [x] [Unique Paths](./dynamic-programming/unique-path/) - DP on matrix, top + left
+- [x] [Longest Increasing Subsequence](./dynamic-programming/longest-increasing-subsequence/) - DP O(n²), ending at i
+- [x] [Jump Game](./dynamic-programming/jump-game/) - greedy, track max reach
