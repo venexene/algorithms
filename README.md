@@ -98,3 +98,9 @@ Algorithmic training - solving problems and taking notes.
 - [x] [Unique Paths](./dynamic-programming/unique-path/) - DP on matrix, top + left
 - [x] [Longest Increasing Subsequence](./dynamic-programming/longest-increasing-subsequence/) - DP O(n²), ending at i
 - [x] [Jump Game](./dynamic-programming/jump-game/) - greedy, track max reach
+
+## Greedy
+
+- [x] [Jump Game II](./greedy/jump-game-2/) - BFS-levels greedy, two boundaries
+- [x] [Gas Station](./greedy/gas-station/) - greedy pass, tank reset
+- [x] [Partition Labels](./greedy/partition-labels/) - last-index map, two passes
