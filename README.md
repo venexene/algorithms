@@ -104,3 +104,8 @@ Algorithmic training - solving problems and taking notes.
 - [x] [Jump Game II](./greedy/jump-game-2/) - BFS-levels greedy, two boundaries
 - [x] [Gas Station](./greedy/gas-station/) - greedy pass, tank reset
 - [x] [Partition Labels](./greedy/partition-labels/) - last-index map, two passes
+
+## Cache
+
+- [x] [LRU Cache](./cache/lru-cache/) - doubly linked list + hash map, sentinel
+- [x] [LFU Cache](./cache/lfu-cache/) - frequency buckets + hash map, sentinel, minFreq
