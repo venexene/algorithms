@@ -109,3 +109,11 @@ Algorithmic training - solving problems and taking notes.
 
 - [x] [LRU Cache](./cache/lru-cache/) - doubly linked list + hash map, sentinel
 - [x] [LFU Cache](./cache/lfu-cache/) - frequency buckets + hash map, sentinel, minFreq
+
+## Heap
+
+- [x] [Last Stone Weight](./heap/last-stone-weight/) - max-heap, smash two heaviest
+- [x] [Kth Largest Element in a Stream](./heap/kth-largest-element-in-a-stream/) - min-heap of size k
+- [x] [Kth Largest Element in Array](./heap/kth-largest-element-in-array/) - min-heap of size k, QuickSelect alternative
+- [x] [K Closest Points to Origin](./heap/k-closest-points-to-origin/) - max-heap, squared distance
+- [x] [Task Scheduler](./heap/task-scheduler/) - max-heap + cooldown queue, greedy formula
