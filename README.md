@@ -123,3 +123,9 @@ Algorithmic training - solving problems and taking notes.
 - [x] [Implement Trie](./trie/implement-trie/) - array of 26 children, isEnd
 - [x] [Design Add and Search Words](./trie/design-add-and-search-words-data-structure/) - trie + DFS for wildcard
 - [x] [Replace Words](./trie/replace-words/) - find shortest root prefix
+
+## Backtracking
+
+- [x] [Subsets](./backtracking/subsets/) - include/exclude, start-index
+- [x] [Permutations](./backtracking/permutations/) - swap in-place, remove element, visited map
+- [x] [Combination Sum](./backtracking/combination-sum/) - start-index + reuse, sort + break
