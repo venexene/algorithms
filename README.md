@@ -117,3 +117,9 @@ Algorithmic training - solving problems and taking notes.
 - [x] [Kth Largest Element in Array](./heap/kth-largest-element-in-array/) - min-heap of size k, QuickSelect alternative
 - [x] [K Closest Points to Origin](./heap/k-closest-points-to-origin/) - max-heap, squared distance
 - [x] [Task Scheduler](./heap/task-scheduler/) - max-heap + cooldown queue, greedy formula
+
+## Trie
+
+- [x] [Implement Trie](./trie/implement-trie/) - array of 26 children, isEnd
+- [x] [Design Add and Search Words](./trie/design-add-and-search-words-data-structure/) - trie + DFS for wildcard
+- [x] [Replace Words](./trie/replace-words/) - find shortest root prefix
