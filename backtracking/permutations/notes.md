@@ -6,20 +6,6 @@
 
 Переставляем элементы местами прямо в `nums`, без новых слайсов.
 
-```go
-func dfs(nums []int, start int, res *[][]int) {
-    if start == len(nums) {
-        *res = append(*res, append([]int{}, nums...)) // копия
-        return
-    }
-    for i := start; i < len(nums); i++ {
-        nums[start], nums[i] = nums[i], nums[start] // swap
-        dfs(nums, start+1, res)
-        nums[start], nums[i] = nums[i], nums[start] // swap back
-    }
-}
-```
-
 Идея: на позицию `start` по очереди ставим каждый из оставшихся элементов (swap), рекурсивно заполняем хвост, возвращаем обратно.
 
 ### 2. Удаление элемента — O(n!·n)

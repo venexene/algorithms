@@ -6,20 +6,6 @@
 
 Каждая цифра (2–9) даёт набор букв. Нужно перебрать все комбинации.
 
-```go
-func dfs(digits, str string, ind int) {
-    if ind == len(digits) {
-        res = append(res, str)
-        return
-    }
-    for _, l := range alphabet[digits[ind]] {
-        str += l
-        dfs(digits, str, ind+1)
-        str = str[:len(str)-1] // откат
-    }
-}
-```
-
 На каждом уровне добавляем одну из букв текущей цифры и идём глубже. Срез строки `str[:len-1]` — O(1), не копирует данные.
 
 ## Ключевая идея

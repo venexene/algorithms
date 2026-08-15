@@ -6,27 +6,6 @@
 
 Ищем комбинации, сумма которых равна `target`. Каждый элемент можно брать неограниченное число раз.
 
-```go
-func dfs(nums []int, target, start int, set []int, res *[][]int) {
-    if target == 0 {
-        *res = append(*res, append([]int{}, set...)) // копия
-        return
-    }
-    if target < 0 {
-        return // превысили — отсечение
-    }
-
-    for i := start; i < len(nums); i++ {
-        if nums[i] > target {
-            break // отсортировано → дальше только больше
-        }
-        set = append(set, nums[i])
-        dfs(nums, target-nums[i], i, set, res) // i, а не i+1 — повторение
-        set = set[:len(set)-1]
-    }
-}
-```
-
 ## Ключевые идеи
 
 1. **`i`, а не `i+1`** — передаём тот же индекс в рекурсию. Это разрешает брать `nums[i]` снова и снова (неограниченное количество).

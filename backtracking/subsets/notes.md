@@ -25,17 +25,6 @@ func dfs(i int, set []int) {
 
 Результат добавляем **на каждом узле**, а цикл стартует с `start`, чтобы не возвращаться к уже пройденным индексам.
 
-```go
-func dfs(start int, set []int) {
-    res = append(res, append([]int{}, set...)) // каждый узел — подмножество
-    for i := start; i < len(nums); i++ {
-        set = append(set, nums[i])
-        dfs(i+1, set)
-        set = set[:len(set)-1]
-    }
-}
-```
-
 | | include/exclude | start-index |
 |---|-----------------|-------------|
 | Когда добавляем | только в листе | на каждом узле |
