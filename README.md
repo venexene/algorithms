@@ -129,3 +129,6 @@ Algorithmic training - solving problems and taking notes.
 - [x] [Subsets](./backtracking/subsets/) - include/exclude, start-index
 - [x] [Permutations](./backtracking/permutations/) - swap in-place, remove element, visited map
 - [x] [Combination Sum](./backtracking/combination-sum/) - start-index + reuse, sort + break
+- [x] [Letter Combinations of a Phone Number](./backtracking/letter-combinations/) - backtracking over digit-to-letters map
+- [x] [Generate Parentheses](./backtracking/generate-parentheses/) - prune invalid prefixes, open/close invariants
+- [x] [Word Search](./backtracking/word-search/) - DFS on matrix, mark + backtrack
