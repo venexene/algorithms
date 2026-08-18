@@ -1,19 +1,19 @@
 package main
 
 type ListNode struct {
-	Val int
+	Val  int
 	Next *ListNode
 }
 
 func removeNthFromEnd(head *ListNode, n int) *ListNode {
-    p1 := head
+	p1 := head
 	var p2 *ListNode = nil
-    var prev *ListNode = nil
+	var prev *ListNode = nil
 	c := 0
 
-    if p1.Next == nil {
-        return nil
-    }
+	if p1.Next == nil {
+		return nil
+	}
 
 	for p1 != nil {
 		if c == n {
@@ -23,26 +23,26 @@ func removeNthFromEnd(head *ListNode, n int) *ListNode {
 		c++
 
 		if p2 != nil {
-            prev = p2
+			prev = p2
 			p2 = p2.Next
 		}
 	}
 
-    if p2 == nil {
-        head = head.Next
-    } else {
-        prev.Next = p2.Next
-    }
+	if p2 == nil {
+		head = head.Next
+	} else {
+		prev.Next = p2.Next
+	}
 
 	return head
 }
 
 func removeNthFromEndDummy(head *ListNode, n int) *ListNode {
-    dummy := &ListNode{0, head}
+	dummy := &ListNode{0, head}
 	slow := dummy
 	fast := dummy
 
-	for i := 0; i < n + 1; i++ {
+	for i := 0; i < n+1; i++ {
 		fast = fast.Next
 	}
 

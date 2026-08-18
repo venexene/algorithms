@@ -13,7 +13,7 @@ func main() {
 }
 
 func merge(intervals [][]int) [][]int {
-    slices.SortFunc(intervals, func(a, b []int) int {
+	slices.SortFunc(intervals, func(a, b []int) int {
 		return cmp.Compare(a[0], b[0])
 	})
 

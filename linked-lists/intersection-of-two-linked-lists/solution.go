@@ -1,7 +1,7 @@
 package main
 
 type ListNode struct {
-	Val int
+	Val  int
 	Next *ListNode
 }
 
@@ -9,7 +9,7 @@ func getIntersectionNode(headA, headB *ListNode) *ListNode {
 	p1 := headA
 	p2 := headB
 
-    for p1 != p2 {
+	for p1 != p2 {
 		if p1 == nil {
 			p1 = headB
 		} else {
@@ -22,6 +22,6 @@ func getIntersectionNode(headA, headB *ListNode) *ListNode {
 			p2 = p2.Next
 		}
 	}
-	
+
 	return p1
 }

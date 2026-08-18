@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	strs := []string{"bdddddddddd","bbbbbbbbbbc"}
+	strs := []string{"bdddddddddd", "bbbbbbbbbbc"}
 	result := groupAnagramsFreq(strs)
 	fmt.Println(result)
 }
@@ -23,7 +23,7 @@ func groupAnagramsSort(strs []string) [][]string {
 	for _, val := range mp {
 		vals = append(vals, val)
 	}
-	
+
 	return vals
 }
 
@@ -45,7 +45,7 @@ func groupAnagramsFreq(strs []string) [][]string {
 	for _, val := range mp {
 		vals = append(vals, val)
 	}
-	
+
 	return vals
 }
 
@@ -53,7 +53,7 @@ func getFreq(s string) [26]int {
 	arr := [26]int{}
 	runes := []rune(s)
 	for _, r := range runes {
-		arr[int(r - 'a')]++
+		arr[int(r-'a')]++
 	}
 
 	return arr

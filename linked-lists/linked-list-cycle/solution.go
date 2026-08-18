@@ -8,10 +8,10 @@ func main() {
 }
 
 type ListNode struct {
-	Val int
+	Val  int
 	Next *ListNode
 }
- 
+
 func hasCycle(head *ListNode) bool {
 	set := map[*ListNode]struct{}{}
 

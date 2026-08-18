@@ -3,8 +3,8 @@ package main
 import "fmt"
 
 func main() {
-	gas := []int{3,1,1}
-	cost := []int{1,2,2}
+	gas := []int{3, 1, 1}
+	cost := []int{1, 2, 2}
 	result := canCompleteCircuit(gas, cost)
 	fmt.Println(result)
 }
@@ -15,7 +15,7 @@ func canCompleteCircuit(gas []int, cost []int) int {
 	sm := 0
 	res := -1
 
-    for i := len(gas) - 1; i >= 0; i-- {
+	for i := len(gas) - 1; i >= 0; i-- {
 		dif := gas[i] - cost[i]
 		tank += dif
 		if tank >= mx {
@@ -36,7 +36,7 @@ func canCompleteCircuitForward(gas []int, cost []int) int {
 	sm := 0
 	res := 0
 
-    for i := 0; i < len(gas); i++ {
+	for i := 0; i < len(gas); i++ {
 		dif := gas[i] - cost[i]
 		tank += dif
 		if tank < 0 {

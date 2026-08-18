@@ -11,7 +11,7 @@ func main() {
 
 func searchFirst(nums []int, target int) int {
 	k := 0
-    for i := 1; i < len(nums); i++ {
+	for i := 1; i < len(nums); i++ {
 		if nums[i-1] > nums[i] {
 			k = i
 			break

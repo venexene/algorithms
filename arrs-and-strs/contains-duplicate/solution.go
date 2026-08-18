@@ -8,12 +8,12 @@ import (
 func main() {
 	nums := []int{1, 2, 3, 1}
 	result := containsDuplicateHash(nums)
-	fmt.Println(result)	
+	fmt.Println(result)
 }
 
 func containsDuplicateHash(nums []int) bool {
-    hashMap := map[int]struct{}{}
-	
+	hashMap := map[int]struct{}{}
+
 	for _, num := range nums {
 		if _, ok := hashMap[num]; ok {
 			return true
@@ -27,7 +27,7 @@ func containsDuplicateHash(nums []int) bool {
 func containsDuplicateSort(nums []int) bool {
 	sort.Ints(nums)
 	for i := 1; i < len(nums); i++ {
-		if nums[i - 1] == nums[i] {
+		if nums[i-1] == nums[i] {
 			return true
 		}
 	}

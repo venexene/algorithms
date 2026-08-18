@@ -6,19 +6,19 @@ import (
 )
 
 func main() {
-	dictionary := []string{"a","b","c"}
+	dictionary := []string{"a", "b", "c"}
 	sentence := "aadsfasf absbs bbab cadsfafs"
 	result := replaceWords(dictionary, sentence)
 	fmt.Println(result)
 }
 
 type Trie struct {
-    root *Node
+	root *Node
 }
 
 type Node struct {
 	children [26]*Node
-	isEnd bool
+	isEnd    bool
 }
 
 func Constructor() Trie {
@@ -27,7 +27,7 @@ func Constructor() Trie {
 	}
 }
 
-func (this *Trie) Insert(word string)  {
+func (this *Trie) Insert(word string) {
 	node := this.root
 	for _, r := range word {
 		if node.children[r-'a'] == nil {
@@ -37,7 +37,6 @@ func (this *Trie) Insert(word string)  {
 	}
 	node.isEnd = true
 }
-
 
 func (this *Trie) FindRoot(word string) string {
 	node := this.root
@@ -56,12 +55,12 @@ func (this *Trie) FindRoot(word string) string {
 }
 
 func replaceWords(dictionary []string, sentence string) string {
-    trie := Constructor()
+	trie := Constructor()
 
 	for _, word := range dictionary {
 		trie.Insert(word)
 	}
-	
+
 	words := strings.Split(sentence, " ")
 
 	for i := 0; i < len(words); i++ {

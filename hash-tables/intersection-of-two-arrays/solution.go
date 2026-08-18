@@ -12,7 +12,7 @@ func main() {
 }
 
 func intersection(nums1 []int, nums2 []int) []int {
-    set := map[int]struct{}{}
+	set := map[int]struct{}{}
 	inter := []int{}
 
 	for _, num := range nums1 {

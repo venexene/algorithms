@@ -5,12 +5,12 @@ func main() {
 }
 
 type Trie struct {
-    root *Node
+	root *Node
 }
 
 type Node struct {
 	children [26]*Node
-	isEnd bool
+	isEnd    bool
 }
 
 func Constructor() Trie {
@@ -19,8 +19,7 @@ func Constructor() Trie {
 	}
 }
 
-
-func (this *Trie) Insert(word string)  {
+func (this *Trie) Insert(word string) {
 	node := this.root
 	for _, r := range word {
 		if node.children[r-'a'] == nil {
@@ -30,7 +29,6 @@ func (this *Trie) Insert(word string)  {
 	}
 	node.isEnd = true
 }
-
 
 func (this *Trie) Search(word string) bool {
 	node := this.root
@@ -42,7 +40,6 @@ func (this *Trie) Search(word string) bool {
 	}
 	return node.isEnd
 }
-
 
 func (this *Trie) StartsWith(prefix string) bool {
 	node := this.root

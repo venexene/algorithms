@@ -1,12 +1,12 @@
 package main
 
 func main() {
-	myQueue := Constructor();
-	myQueue.Push(1); // queue is: [1]
-	myQueue.Push(2); // queue is: [1, 2] (leftmost is front of the queue)
-	myQueue.Peek(); // return 1
-	myQueue.Pop(); // return 1, queue is [2]
-	myQueue.Empty(); // return false
+	myQueue := Constructor()
+	myQueue.Push(1) // queue is: [1]
+	myQueue.Push(2) // queue is: [1, 2] (leftmost is front of the queue)
+	myQueue.Peek()  // return 1
+	myQueue.Pop()   // return 1, queue is [2]
+	myQueue.Empty() // return false
 }
 
 type Stack struct {
@@ -18,12 +18,12 @@ func (s *Stack) Push(val int) {
 }
 
 func (s *Stack) Peek() int {
-	return s.slice[len(s.slice) - 1]
+	return s.slice[len(s.slice)-1]
 }
 
 func (s *Stack) Pop() int {
-	val := s.slice[len(s.slice) - 1]
-	s.slice = s.slice[:len(s.slice) - 1]
+	val := s.slice[len(s.slice)-1]
+	s.slice = s.slice[:len(s.slice)-1]
 	return val
 }
 
@@ -36,22 +36,19 @@ type MyQueue struct {
 	mainStack *Stack
 }
 
-
 func Constructor() MyQueue {
-    return MyQueue{
+	return MyQueue{
 		funcStack: &Stack{},
 		mainStack: &Stack{},
 	}
 }
 
-
-func (this *MyQueue) Push(x int)  {
+func (this *MyQueue) Push(x int) {
 	this.funcStack.Push(x)
 }
 
-
 func (this *MyQueue) Pop() int {
-    if this.mainStack.Empty() {
+	if this.mainStack.Empty() {
 		for !this.funcStack.Empty() {
 			this.mainStack.Push(this.funcStack.Pop())
 		}
@@ -59,9 +56,8 @@ func (this *MyQueue) Pop() int {
 	return this.mainStack.Pop()
 }
 
-
 func (this *MyQueue) Peek() int {
-     if this.mainStack.Empty() {
+	if this.mainStack.Empty() {
 		for !this.funcStack.Empty() {
 			this.mainStack.Push(this.funcStack.Pop())
 		}
@@ -69,7 +65,6 @@ func (this *MyQueue) Peek() int {
 	return this.mainStack.Peek()
 }
 
-
 func (this *MyQueue) Empty() bool {
-    return this.mainStack.Empty() && this.funcStack.Empty()
+	return this.mainStack.Empty() && this.funcStack.Empty()
 }

@@ -3,13 +3,13 @@ package main
 import "math"
 
 type TreeNode struct {
-	Val int
-	Left *TreeNode
+	Val   int
+	Left  *TreeNode
 	Right *TreeNode
 }
 
 func isValidBST(root *TreeNode) bool {
-    if root == nil {
+	if root == nil {
 		return true
 	}
 

@@ -1,30 +1,30 @@
 package main
 
 func main() {
-	
+
 }
 
 type Node struct {
-	key int
+	key   int
 	value int
 	count int
-	next *Node
-	prev *Node
+	next  *Node
+	prev  *Node
 }
 
 type LFUCache struct {
 	capacity int
-    nodes map[int]*Node
-	freqMap map[int]*Node
-	minFreq int
+	nodes    map[int]*Node
+	freqMap  map[int]*Node
+	minFreq  int
 }
 
 func Constructor(capacity int) LFUCache {
-    cache := LFUCache{
+	cache := LFUCache{
 		capacity: capacity,
-		nodes: map[int]*Node{},
-		freqMap: map[int]*Node{},
-		minFreq: 1,
+		nodes:    map[int]*Node{},
+		freqMap:  map[int]*Node{},
+		minFreq:  1,
 	}
 
 	cache.freqMap[cache.minFreq] = &Node{}
@@ -35,25 +35,25 @@ func Constructor(capacity int) LFUCache {
 }
 
 func (this *LFUCache) Get(key int) int {
-    node, ok := this.nodes[key]
+	node, ok := this.nodes[key]
 	if !ok {
 		return -1
 	}
 	node.count++
-	this.promote(node, node.count, node.count - 1)
+	this.promote(node, node.count, node.count-1)
 	return node.value
 }
 
-func (this *LFUCache) Put(key int, value int)  {
+func (this *LFUCache) Put(key int, value int) {
 	if node, ok := this.nodes[key]; ok {
 		node.value = value
 		node.count++
-		this.promote(node, node.count, node.count - 1)
+		this.promote(node, node.count, node.count-1)
 		return
 	}
 
 	node := &Node{key: key, value: value, count: 1}
-	if len(this.nodes) + 1 > this.capacity {
+	if len(this.nodes)+1 > this.capacity {
 		tail := this.popTail()
 		delete(this.nodes, tail.key)
 	}

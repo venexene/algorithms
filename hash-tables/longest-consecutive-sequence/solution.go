@@ -14,7 +14,7 @@ func longestConsecutive(nums []int) int {
 	}
 
 	res := 1
-    set := map[int]struct{}{}
+	set := map[int]struct{}{}
 
 	for _, num := range nums {
 		set[num] = struct{}{}
@@ -27,8 +27,8 @@ func longestConsecutive(nums []int) int {
 
 		count := 1
 		cur := num
-		for  {
-			if _, ok := set[cur + 1]; ok {
+		for {
+			if _, ok := set[cur+1]; ok {
 				count++
 				cur++
 			} else {

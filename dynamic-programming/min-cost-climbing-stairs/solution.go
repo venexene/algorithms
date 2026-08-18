@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	cost := []int{1,100,1,1,1,100,1,1,100,1}
+	cost := []int{1, 100, 1, 1, 1, 100, 1, 1, 100, 1}
 	result := minCostClimbingStairs(cost)
 	fmt.Println(result)
 }

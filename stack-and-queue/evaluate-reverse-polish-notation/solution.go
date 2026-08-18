@@ -12,8 +12,8 @@ func main() {
 }
 
 func evalRPN(tokens []string) int {
-    nums := Stack{}
-	
+	nums := Stack{}
+
 	for _, token := range tokens {
 		switch {
 		case token == "+":
@@ -50,12 +50,12 @@ func (s *Stack) Push(val int) {
 }
 
 func (s *Stack) Peek() int {
-	return s.slice[len(s.slice) - 1]
+	return s.slice[len(s.slice)-1]
 }
 
 func (s *Stack) Pop() int {
-	val := s.slice[len(s.slice) - 1]
-	s.slice = s.slice[:len(s.slice) - 1]
+	val := s.slice[len(s.slice)-1]
+	s.slice = s.slice[:len(s.slice)-1]
 	return val
 }
 

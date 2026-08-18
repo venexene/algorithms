@@ -12,7 +12,7 @@ func main() {
 }
 
 func calPoints(operations []string) int {
-    records := &Stack{}
+	records := &Stack{}
 
 	for _, op := range operations {
 		switch {
@@ -25,13 +25,13 @@ func calPoints(operations []string) int {
 			val := records.Peek()
 			records.Push(val * 2)
 		case op == "C":
-			records.Pop() 
+			records.Pop()
 		default:
 			val, _ := strconv.Atoi(op)
 			records.Push(val)
 		}
 	}
-	
+
 	sum := 0
 	for !records.Empty() {
 		sum += records.Pop()
@@ -49,12 +49,12 @@ func (s *Stack) Push(val int) {
 }
 
 func (s *Stack) Peek() int {
-	return s.slice[len(s.slice) - 1]
+	return s.slice[len(s.slice)-1]
 }
 
 func (s *Stack) Pop() int {
-	val := s.slice[len(s.slice) - 1]
-	s.slice = s.slice[:len(s.slice) - 1]
+	val := s.slice[len(s.slice)-1]
+	s.slice = s.slice[:len(s.slice)-1]
 	return val
 }
 

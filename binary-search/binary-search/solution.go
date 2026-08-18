@@ -10,7 +10,7 @@ func main() {
 }
 
 func search(nums []int, target int) int {
-    low := 0
+	low := 0
 	high := len(nums) - 1
 	for low <= high {
 		mid := (high + low) / 2

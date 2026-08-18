@@ -1,8 +1,8 @@
 package main
 
 type TreeNode struct {
-	Val int
-	Left *TreeNode
+	Val   int
+	Left  *TreeNode
 	Right *TreeNode
 }
 
@@ -63,7 +63,7 @@ func levelOrderLen(root *TreeNode) [][]int {
 				queue = append(queue, node.Right)
 			}
 
-			res[len(res) - 1] = append(res[len(res)-1], node.Val)
+			res[len(res)-1] = append(res[len(res)-1], node.Val)
 		}
 
 	}

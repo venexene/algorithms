@@ -3,16 +3,16 @@ package main
 import "fmt"
 
 func main() {
-	nums := []int{3,3}
+	nums := []int{3, 3}
 	target := 6
 	result := twoSumHash(nums, target)
 	fmt.Println(result)
 }
 
 func twoSumBrutforce(nums []int, target int) []int {
-    for i, num1 := range nums {
+	for i, num1 := range nums {
 		for j, num2 := range nums {
-			if i != j && num1 + num2 == target {
+			if i != j && num1+num2 == target {
 				return []int{i, j}
 			}
 		}
@@ -21,13 +21,13 @@ func twoSumBrutforce(nums []int, target int) []int {
 }
 
 func twoSumTwoPointers(nums []int, target int) []int {
-    i := 0
+	i := 0
 	j := len(nums) - 1
 	vals := sortWithIndexes(nums)
 	for i < j {
-		if vals[i][0] + vals[j][0] == target {
+		if vals[i][0]+vals[j][0] == target {
 			return []int{vals[i][1], vals[j][1]}
-		} else if vals[i][0] + vals[j][0]  < target {
+		} else if vals[i][0]+vals[j][0] < target {
 			i++
 		} else {
 			j--
@@ -40,7 +40,7 @@ func twoSumHash(nums []int, target int) []int {
 	seen := map[int]int{}
 
 	for i, num := range nums {
-		if j, ok := seen[target - num]; ok {
+		if j, ok := seen[target-num]; ok {
 			return []int{i, j}
 		}
 		seen[num] = i
@@ -56,7 +56,7 @@ func sortWithIndexes(nums []int) [][]int {
 	}
 
 	quickSort(vals, 0, len(vals)-1)
-	
+
 	return vals
 }
 
@@ -64,14 +64,14 @@ func quickSort(vals [][]int, low int, high int) {
 	if low < high {
 		pi := partition(vals, low, high)
 
-		quickSort(vals, low, pi - 1)
-		quickSort(vals, pi + 1, high)
+		quickSort(vals, low, pi-1)
+		quickSort(vals, pi+1, high)
 	}
 }
 
 func partition(vals [][]int, low int, high int) int {
 	pivot := vals[high][0]
-	
+
 	i := low - 1
 	for j := low; j <= high; j++ {
 		if vals[j][0] < pivot {
@@ -80,7 +80,6 @@ func partition(vals [][]int, low int, high int) int {
 		}
 	}
 
-
-	vals[i + 1], vals[high] = vals[high], vals[i + 1]
+	vals[i+1], vals[high] = vals[high], vals[i+1]
 	return i + 1
 }

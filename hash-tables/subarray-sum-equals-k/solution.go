@@ -14,7 +14,7 @@ func subarraySum(nums []int, k int) int {
 	cur := 0
 	for _, num := range nums {
 		cur += num
-		res += mp[cur - k]
+		res += mp[cur-k]
 		mp[cur]++
 	}
 

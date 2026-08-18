@@ -1,19 +1,19 @@
 package main
 
 func main() {
-	
+
 }
 
 type Node struct {
-	key int
+	key   int
 	value int
-	next *Node
-	prev *Node
+	next  *Node
+	prev  *Node
 }
 
 type LRUCache struct {
 	capacity int
-    nodes map[int]*Node
+	nodes    map[int]*Node
 	sentinel *Node
 }
 
@@ -22,9 +22,9 @@ func Constructor(capacity int) LRUCache {
 	sentinel.next = sentinel
 	sentinel.prev = sentinel
 
-    cache := LRUCache{
+	cache := LRUCache{
 		capacity: capacity,
-		nodes: map[int]*Node{},
+		nodes:    map[int]*Node{},
 		sentinel: sentinel,
 	}
 
@@ -32,7 +32,7 @@ func Constructor(capacity int) LRUCache {
 }
 
 func (this *LRUCache) Get(key int) int {
-    node, ok := this.nodes[key]
+	node, ok := this.nodes[key]
 	if !ok {
 		return -1
 	}
@@ -40,7 +40,7 @@ func (this *LRUCache) Get(key int) int {
 	return node.value
 }
 
-func (this *LRUCache) Put(key int, value int)  {
+func (this *LRUCache) Put(key int, value int) {
 	if node, ok := this.nodes[key]; ok {
 		this.moveToHead(node)
 		node.value = value

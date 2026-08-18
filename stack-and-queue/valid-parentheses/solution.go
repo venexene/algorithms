@@ -9,7 +9,7 @@ func main() {
 }
 
 func isValid(s string) bool {
-	brackets := map[rune]rune{'(':')', '{':'}', '[':']'}
+	brackets := map[rune]rune{'(': ')', '{': '}', '[': ']'}
 
 	stack := make([]rune, 0, len(s))
 	for _, r := range s {

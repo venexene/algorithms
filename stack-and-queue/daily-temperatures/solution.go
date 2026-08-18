@@ -9,12 +9,12 @@ func main() {
 }
 
 func dailyTemperatures(temperatures []int) []int {
-    results := make([]int, len(temperatures))
+	results := make([]int, len(temperatures))
 	dayStack := Stack{}
 
 	dayStack.Push(0)
-	for i:= 1; i < len(temperatures); i++ {
-		for !dayStack.Empty() && temperatures[i] > temperatures[dayStack.Peek()]  {
+	for i := 1; i < len(temperatures); i++ {
+		for !dayStack.Empty() && temperatures[i] > temperatures[dayStack.Peek()] {
 			p := dayStack.Peek()
 			results[p] = i - p
 			dayStack.Pop()
@@ -34,12 +34,12 @@ func (s *Stack) Push(val int) {
 }
 
 func (s *Stack) Peek() int {
-	return s.slice[len(s.slice) - 1]
+	return s.slice[len(s.slice)-1]
 }
 
 func (s *Stack) Pop() int {
-	val := s.slice[len(s.slice) - 1]
-	s.slice = s.slice[:len(s.slice) - 1]
+	val := s.slice[len(s.slice)-1]
+	s.slice = s.slice[:len(s.slice)-1]
 	return val
 }
 

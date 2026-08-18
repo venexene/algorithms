@@ -9,7 +9,7 @@ func main() {
 	fmt.Println(nums1)
 }
 
-func merge(nums1 []int, m int, nums2 []int, n int)  {
+func merge(nums1 []int, m int, nums2 []int, n int) {
 	n1 := m - 1
 	n2 := n - 1
 

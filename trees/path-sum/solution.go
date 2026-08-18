@@ -1,8 +1,8 @@
 package main
 
 type TreeNode struct {
-	Val int
-	Left *TreeNode
+	Val   int
+	Left  *TreeNode
 	Right *TreeNode
 }
 
@@ -11,7 +11,7 @@ func hasPathSum(root *TreeNode, targetSum int) bool {
 		return false
 	}
 
-	targetSum -= root.Val 
+	targetSum -= root.Val
 
 	if root.Left == nil && root.Right == nil {
 		return targetSum == 0
@@ -19,5 +19,3 @@ func hasPathSum(root *TreeNode, targetSum int) bool {
 
 	return hasPathSum(root.Left, targetSum) || hasPathSum(root.Right, targetSum)
 }
-
-

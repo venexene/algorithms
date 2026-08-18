@@ -9,7 +9,7 @@ func main() {
 }
 
 func lengthOfLongestSubstring(s string) int {
-    mp := map[rune]int{}
+	mp := map[rune]int{}
 	left := 0
 	right := 0
 	max := 0
@@ -19,7 +19,7 @@ func lengthOfLongestSubstring(s string) int {
 			left = val + 1
 		}
 
-		if right - left + 1 > max {
+		if right-left+1 > max {
 			max = right - left + 1
 		}
 

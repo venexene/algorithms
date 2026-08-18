@@ -9,11 +9,11 @@ func validPath(n int, edges [][]int, source int, destination int) bool {
 		return true
 	}
 
-    if n <= 0 {
-        return false
-    }
-    
-    visited := map[int]bool{} // можно использовать массив
+	if n <= 0 {
+		return false
+	}
+
+	visited := map[int]bool{} // можно использовать массив
 
 	adj := map[int][]int{} // можно использовать массив
 	for _, edge := range edges {
@@ -31,8 +31,8 @@ func validPathAdd(adj map[int][]int, source int, destination int, visited map[in
 
 	visited[source] = true
 
-    res := false
-    for _, vertex := range adj[source] {
+	res := false
+	for _, vertex := range adj[source] {
 		if !visited[vertex] {
 			res = res || validPathAdd(adj, vertex, destination, visited)
 		}

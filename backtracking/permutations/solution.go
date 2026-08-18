@@ -12,7 +12,7 @@ func main() {
 }
 
 func permute(nums []int) [][]int {
-    result := [][]int{}
+	result := [][]int{}
 	permuteSwap(nums, 0, &result)
 	return result
 }
@@ -59,7 +59,7 @@ func permuteAddMap(nums []int, visited map[int]struct{}, set []int, res *[][]int
 	for _, n := range nums {
 		if _, ok := visited[n]; !ok {
 			set = append(set, n)
-			permuteAddMap(nums, maps.Clone(visited) , set, res)
+			permuteAddMap(nums, maps.Clone(visited), set, res)
 			set = set[:len(set)-1]
 		}
 	}

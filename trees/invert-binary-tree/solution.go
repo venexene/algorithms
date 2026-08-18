@@ -1,8 +1,8 @@
-package main 
+package main
 
 type TreeNode struct {
-	Val int
-	Left *TreeNode
+	Val   int
+	Left  *TreeNode
 	Right *TreeNode
 }
 
@@ -11,7 +11,7 @@ func invertTree(root *TreeNode) *TreeNode {
 		return nil
 	}
 
-    root.Left, root.Right = root.Right, root.Left
+	root.Left, root.Right = root.Right, root.Left
 
 	invertTree(root.Left)
 	invertTree(root.Right)

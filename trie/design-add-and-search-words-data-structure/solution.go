@@ -5,12 +5,12 @@ func main() {
 }
 
 type WordDictionary struct {
-    root *Node
+	root *Node
 }
 
 type Node struct {
 	children [26]*Node
-	isEnd bool
+	isEnd    bool
 }
 
 func Constructor() WordDictionary {
@@ -18,7 +18,6 @@ func Constructor() WordDictionary {
 		root: &Node{},
 	}
 }
-
 
 func (this *WordDictionary) AddWord(word string) {
 	node := this.root
@@ -30,7 +29,6 @@ func (this *WordDictionary) AddWord(word string) {
 	}
 	node.isEnd = true
 }
-
 
 func (this *WordDictionary) Search(word string) bool {
 	return this.SearchDFS(word, this.root)
@@ -46,7 +44,7 @@ func (this *WordDictionary) SearchDFS(word string, node *Node) bool {
 				}
 			}
 			return res
-		} 
+		}
 		node = node.children[r-'a']
 		if node == nil {
 			return false

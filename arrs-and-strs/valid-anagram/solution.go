@@ -20,8 +20,8 @@ func isAnagramArr(s string, t string) bool {
 	symbols := [26]int{}
 
 	for i := range s {
-		symbols[s[i] - 'a']++
-		symbols[t[i] - 'a']--
+		symbols[s[i]-'a']++
+		symbols[t[i]-'a']--
 	}
 
 	for _, c := range symbols {

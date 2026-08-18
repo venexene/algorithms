@@ -10,7 +10,7 @@ func main() {
 }
 
 func searchInsert(nums []int, target int) int {
-    low := 0
+	low := 0
 	high := len(nums) - 1
 
 	mid := -1

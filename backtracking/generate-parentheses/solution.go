@@ -9,7 +9,7 @@ func main() {
 }
 
 func generateParenthesis(n int) []string {
-    result := []string{}
+	result := []string{}
 	generateParenthesisAdd(n, 0, 0, "", &result)
 	return result
 }
@@ -19,7 +19,7 @@ func generateParenthesisAdd(n, open, close int, str string, res *[]string) {
 		return
 	}
 
-	if open + close == n * 2 {
+	if open+close == n*2 {
 		*res = append(*res, str)
 		return
 	}

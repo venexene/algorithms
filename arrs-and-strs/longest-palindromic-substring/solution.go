@@ -18,27 +18,27 @@ func longestPalindromeExpand(s string) string {
 	r := 0
 	for i := 0; i < len(runes); i++ {
 		l, r = expand(i, i, runes)
-		if r - l + 1 > maxr - maxl + 1 {
+		if r-l+1 > maxr-maxl+1 {
 			maxr = r
 			maxl = l
 		}
 
-		if i + 1 >= len(runes) {
+		if i+1 >= len(runes) {
 			continue
 		}
-		l, r = expand(i, i + 1, runes)
-		if r - l + 1 > maxr - maxl + 1 {
+		l, r = expand(i, i+1, runes)
+		if r-l+1 > maxr-maxl+1 {
 			maxr = r
 			maxl = l
 		}
 	}
-	return string(runes[maxl:maxr+1])
+	return string(runes[maxl : maxr+1])
 }
 
 func expand(l, r int, runes []rune) (int, int) {
-	for l >= 0 && r < len(runes) && runes[l] == runes[r]  {
-		l--;
-		r++;
+	for l >= 0 && r < len(runes) && runes[l] == runes[r] {
+		l--
+		r++
 	}
-	return l+1, r-1
+	return l + 1, r - 1
 }

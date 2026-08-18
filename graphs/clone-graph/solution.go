@@ -9,7 +9,7 @@ func main() {
 }
 
 type Node struct {
-	Val int
+	Val       int
 	Neighbors []*Node
 }
 
@@ -17,13 +17,13 @@ func cloneGraph(node *Node) *Node {
 	if node == nil {
 		return nil
 	}
-    visited := map[*Node]*Node{}
+	visited := map[*Node]*Node{}
 	return dfs(node, visited)
 }
 
 func dfs(node *Node, visited map[*Node]*Node) *Node {
 	clone := &Node{node.Val, []*Node{}}
-	visited[node] = clone 
+	visited[node] = clone
 	for _, n := range node.Neighbors {
 		if _, ok := visited[n]; ok != true {
 			clone.Neighbors = append(clone.Neighbors, dfs(n, visited))

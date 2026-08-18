@@ -55,8 +55,8 @@ func isPalindromeFilter(s string) bool {
 		if isAlphanumeric(runes[i]) {
 			fwd.WriteRune(unicode.ToLower(runes[i]))
 		}
-		if isAlphanumeric(runes[ln - 1 - i]) {
-			rev.WriteRune(unicode.ToLower(runes[ln - 1 - i]))
+		if isAlphanumeric(runes[ln-1-i]) {
+			rev.WriteRune(unicode.ToLower(runes[ln-1-i]))
 		}
 	}
 

@@ -1,10 +1,9 @@
 package main
 
 import (
-	"fmt"
 	"container/heap"
+	"fmt"
 )
-
 
 func main() {
 	points := [][]int{{1, 3}, {-2, 2}}
@@ -15,7 +14,7 @@ func main() {
 
 type PointHeap struct {
 	points [][]int
-	k int
+	k      int
 }
 
 func sqrDist(point []int) int {
@@ -25,10 +24,10 @@ func sqrDist(point []int) int {
 func (h PointHeap) Len() int { return len(h.points) }
 
 func (h PointHeap) Less(i, j int) bool {
-	 return sqrDist(h.points[i]) > sqrDist(h.points[j]) 
+	return sqrDist(h.points[i]) > sqrDist(h.points[j])
 }
 
-func (h PointHeap) Swap(i, j int) { 
+func (h PointHeap) Swap(i, j int) {
 	h.points[i], h.points[j] = h.points[j], h.points[i]
 }
 
@@ -40,7 +39,7 @@ func (h *PointHeap) Pop() any {
 	old := h.points
 	n := len(old)
 	x := old[n-1]
-	h.points = old[0:n-1]
+	h.points = old[0 : n-1]
 	return x
 }
 
@@ -51,14 +50,13 @@ func (h *PointHeap) Add(x []int) {
 	}
 }
 
-
 func kClosest(points [][]int, k int) [][]int {
 	h := &PointHeap{
 		points: [][]int{},
-		k: k,
+		k:      k,
 	}
 
-    for _, p := range points {
+	for _, p := range points {
 		h.Add(p)
 	}
 

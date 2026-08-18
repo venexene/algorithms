@@ -13,7 +13,7 @@ func main() {
 }
 
 func combinationSum(candidates []int, target int) [][]int {
-    result := [][]int{}
+	result := [][]int{}
 	slices.Sort(candidates)
 	combinationSumAdd(candidates, target, 0, []int{}, &result)
 	return result
@@ -33,7 +33,7 @@ func combinationSumAdd(nums []int, target, start int, set []int, res *[][]int) {
 			break
 		}
 		set = append(set, nums[i])
-		combinationSumAdd(nums, target - nums[i], i, set, res)
+		combinationSumAdd(nums, target-nums[i], i, set, res)
 		set = set[:len(set)-1]
 	}
 }

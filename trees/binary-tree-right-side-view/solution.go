@@ -1,13 +1,13 @@
 package main
 
 type TreeNode struct {
-	Val int
-	Left *TreeNode
+	Val   int
+	Left  *TreeNode
 	Right *TreeNode
 }
 
 func rightSideView(root *TreeNode) []int {
-    if root == nil {
+	if root == nil {
 		return []int{}
 	}
 
@@ -18,7 +18,7 @@ func rightSideView(root *TreeNode) []int {
 }
 
 func rightSideViewAdd(node *TreeNode, view *[]int, depth int, max *int) {
-    depth++
+	depth++
 	if depth > *max {
 		*view = append(*view, node.Val)
 		*max = depth
@@ -27,7 +27,7 @@ func rightSideViewAdd(node *TreeNode, view *[]int, depth int, max *int) {
 	if node.Right != nil {
 		rightSideViewAdd(node.Right, view, depth, max)
 	}
-	
+
 	if node.Left != nil {
 		rightSideViewAdd(node.Left, view, depth, max)
 	}

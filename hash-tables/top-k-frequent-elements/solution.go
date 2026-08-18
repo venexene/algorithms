@@ -29,11 +29,11 @@ func topKFrequentHeap(nums []int, k int) []int {
 type FreqHeap struct {
 	vals []int
 	freq map[int]int
-} 
+}
 
 func NewFreqHeap(freqMap map[int]int) *FreqHeap {
 	return &FreqHeap{
-		vals : []int{},
+		vals: []int{},
 		freq: freqMap,
 	}
 }
@@ -58,7 +58,7 @@ func (h *FreqHeap) Pop() any {
 
 type TopKHeap struct {
 	heap *FreqHeap
-	k int
+	k    int
 }
 
 func NewTopKHeap(freqMap map[int]int, k int) *TopKHeap {
@@ -66,7 +66,7 @@ func NewTopKHeap(freqMap map[int]int, k int) *TopKHeap {
 	heap.Init(h)
 	return &TopKHeap{
 		heap: h,
-		k:k,
+		k:    k,
 	}
 }
 
@@ -77,7 +77,7 @@ func (h *TopKHeap) Add(x int) {
 	}
 }
 
-func (h * TopKHeap) Get() []int {
+func (h *TopKHeap) Get() []int {
 	return h.heap.vals
 }
 
@@ -86,8 +86,8 @@ func topKFrequentBucket(nums []int, k int) []int {
 	for _, num := range nums {
 		mp[num]++
 	}
-	
-	buckets := make([][]int, len(nums) + 1)
+
+	buckets := make([][]int, len(nums)+1)
 	for num, val := range mp {
 		buckets[val] = append(buckets[val], num)
 	}

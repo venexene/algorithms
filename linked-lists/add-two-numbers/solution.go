@@ -7,12 +7,12 @@ func main() {
 }
 
 type ListNode struct {
-	Val int
+	Val  int
 	Next *ListNode
 }
 
 func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
-    pred := 0
+	pred := 0
 	sum := 0
 	num1 := 0
 	num2 := 0
@@ -34,7 +34,7 @@ func addTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 			num2 = 0
 		}
 
-		sum = num1 + num2  + pred
+		sum = num1 + num2 + pred
 		pred = sum / 10
 
 		tail.Next = &ListNode{Val: sum % 10}

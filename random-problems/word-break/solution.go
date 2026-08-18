@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	s := "catsandog"
-	wordDict := []string{"cats","dog","sand","and","cat"}
+	wordDict := []string{"cats", "dog", "sand", "and", "cat"}
 	result := wordBreak(s, wordDict)
 	fmt.Println(result)
 }
@@ -25,12 +25,12 @@ func wordBreak(s string, wordDict []string) bool {
 			}
 		}
 	}
-	
+
 	return dp[len(s)]
 }
 
 func wordBreakBacktracking(s string, wordDict []string) bool {
-    dict := map[string]struct{}{}
+	dict := map[string]struct{}{}
 	for _, s := range wordDict {
 		dict[s] = struct{}{}
 	}

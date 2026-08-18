@@ -6,7 +6,7 @@ func main() {
 	m := 3
 	n := 7
 	result := uniquePaths(m, n)
-	fmt.Println(result)	
+	fmt.Println(result)
 }
 
 func uniquePaths(m int, n int) int {
@@ -21,7 +21,7 @@ func uniquePaths(m int, n int) int {
 				grid[i][j] = 1
 				continue
 			}
-			grid[i][j] = grid[i-1][j] + grid[i][j-1] 
+			grid[i][j] = grid[i-1][j] + grid[i][j-1]
 		}
 	}
 

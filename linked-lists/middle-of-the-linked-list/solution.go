@@ -1,19 +1,19 @@
 package main
 
 func main() {
-	
+
 }
 
 type ListNode struct {
-	Val int
+	Val  int
 	Next *ListNode
 }
 
 func middleNode(head *ListNode) *ListNode {
-    slow := head
+	slow := head
 	fast := head
 
-	for fast != nil && fast.Next != nil  {
+	for fast != nil && fast.Next != nil {
 		fast = fast.Next.Next
 		slow = slow.Next
 	}

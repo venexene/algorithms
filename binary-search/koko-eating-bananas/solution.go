@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	piles := []int{30,11,23,4,20}
+	piles := []int{30, 11, 23, 4, 20}
 	h := 5
 	result := minEatingSpeed(piles, h)
 	fmt.Println(result)
@@ -13,7 +13,7 @@ func minEatingSpeed(piles []int, h int) int {
 	low := 1
 	high := 0
 	for _, p := range piles {
-		high = max(high, p) 
+		high = max(high, p)
 	}
 
 	for low < high {

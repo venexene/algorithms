@@ -10,7 +10,7 @@ func main() {
 
 func maxArea(height []int) int {
 	left := 0
-    right := len(height) - 1
+	right := len(height) - 1
 	res := 0
 
 	for left < right {
