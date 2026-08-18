@@ -98,6 +98,7 @@ Algorithmic training - solving problems and taking notes.
 - [x] [Unique Paths](./dynamic-programming/unique-path/) - DP on matrix, top + left
 - [x] [Longest Increasing Subsequence](./dynamic-programming/longest-increasing-subsequence/) - DP O(n²), ending at i
 - [x] [Jump Game](./dynamic-programming/jump-game/) - greedy, track max reach
+- [x] [Word Break](./random-problems/word-break/) - DP on string prefixes, O(n²)
 
 ## Greedy
 
@@ -132,3 +133,12 @@ Algorithmic training - solving problems and taking notes.
 - [x] [Letter Combinations of a Phone Number](./backtracking/letter-combinations/) - backtracking over digit-to-letters map
 - [x] [Generate Parentheses](./backtracking/generate-parentheses/) - prune invalid prefixes, open/close invariants
 - [x] [Word Search](./backtracking/word-search/) - DFS on matrix, mark + backtrack
+
+## Intervals
+
+- [x] [Meeting Rooms](./intervals/meeting-rooms/) - sort by start, check adjacent overlaps
+- [x] [Summary Ranges](./intervals/summary-ranges/) - two pointers, build ranges
+- [x] [Merge Intervals](./intervals/merge-intervals/) - sort by start, greedy merge
+- [x] [Insert Interval](./intervals/insert-interval/) - linear 3-phase merge
+- [x] [Non-overlapping Intervals](./intervals/non-overlapping-intervals/) - sort by start, keep min end
+- [x] [Meeting Rooms II](./intervals/meeting-rooms-2/) - sweep-line, sort starts/ends
