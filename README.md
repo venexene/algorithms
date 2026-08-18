@@ -57,11 +57,13 @@ Algorithmic training - solving problems and taking notes.
 - [x] [Search in Rotated Sorted Array](./binary-search/search-in-rotated-sorted-array/) - one binary search, check sorted half
 - [x] [Find Minimum in Rotated Sorted Array](./binary-search/find-minimum-in-rotated-sorted-array/) - compare mid with high
 - [x] [Koko Eating Bananas](./binary-search/koko-eating-bananas/) - binary search on answer, ceil division
+- [x] [First Bad Version](./random-problems/first-bad-version/) - binary search, find first true
 
 ## Linked Lists
 
 - [x] [Reverse Linked List](./linked-lists/reverse-linked-list/) - iterative, recursive
 - [x] [Merge Two Sorted Lists](./linked-lists/merge-two-sorted-lists/) - dummy node, tail pointer
+- [x] [Merge K Sorted Lists](./random-problems/merge-k-sorted-lists/) - min-heap of k heads, O(N log k)
 - [x] [Linked List Cycle](./linked-lists/linked-list-cycle/) - hash set, Floyd's algorithm
 - [x] [Middle of the Linked List](./linked-lists/middle-of-the-linked-list/) - fast & slow pointers
 - [x] [Intersection of Two Linked Lists](./linked-lists/intersection-of-two-linked-lists/) - hash set, two pointers equalizing distance
@@ -87,6 +89,7 @@ Algorithmic training - solving problems and taking notes.
 - [x] [Clone Graph](./graphs/clone-graph/) - DFS + visited map (orig → clone)
 - [x] [Course Schedule](./graphs/course-schedule/) - topological sort, DFS with 3 states
 - [x] [Pacific Atlantic Water Flow](./graphs/pacific-atlantic-water-flow/) - two DFS from borders, reverse direction
+- [x] [Rotting Oranges](./random-problems/rotting-oranges/) - multi-source BFS by levels
 
 ## Dynamic Programming
 
