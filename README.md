@@ -25,6 +25,7 @@ Algorithmic training - solving problems and taking notes.
 - [x] [Subarray Sum Equals K](./hash-tables/subarray-sum-equals-k/) - prefix sum + hash map
 - [x] [Top K Frequent Elements](./hash-tables/top-k-frequent-elements/) - min-heap, bucket sort
 - [x] [Longest Consecutive Sequence](./hash-tables/longest-consecutive-sequence/) - hash set, sequence start detection
+- [x] [Longest Palindrome](./random-problems/longest-palindrome/) - frequency set, even/odd counts
 
 ## Two Pointers
 
@@ -58,6 +59,7 @@ Algorithmic training - solving problems and taking notes.
 - [x] [Find Minimum in Rotated Sorted Array](./binary-search/find-minimum-in-rotated-sorted-array/) - compare mid with high
 - [x] [Koko Eating Bananas](./binary-search/koko-eating-bananas/) - binary search on answer, ceil division
 - [x] [First Bad Version](./random-problems/first-bad-version/) - binary search, find first true
+- [x] [Time Based Key-Value Store](./random-problems/time-based-key-value-store/) - hash map + binary search, last ≤ timestamp
 
 ## Linked Lists
 
@@ -90,6 +92,7 @@ Algorithmic training - solving problems and taking notes.
 - [x] [Course Schedule](./graphs/course-schedule/) - topological sort, DFS with 3 states
 - [x] [Pacific Atlantic Water Flow](./graphs/pacific-atlantic-water-flow/) - two DFS from borders, reverse direction
 - [x] [Rotting Oranges](./random-problems/rotting-oranges/) - multi-source BFS by levels
+- [x] [01 Matrix](./random-problems/01-matrix/) - multi-source BFS from all zeros
 
 ## Dynamic Programming
 
