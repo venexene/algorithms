@@ -15,6 +15,7 @@ Algorithmic training - solving problems and taking notes.
 - [x] [Group Anagrams](./arrs-and-strs/group-anagrams/) - hash map, sort key, frequency array key
 - [x] [Longest Substring Without Repeating Characters](./arrs-and-strs/longest-substring-without-repeating-characters/) - sliding window, map of positions
 - [x] [Longest Palindromic Substring](./arrs-and-strs/longest-palindromic-substring/) - expand around center
+- [x] [Majority Element](./random-problems/majority-element/) - Boyer-Moore voting, hash map
 
 ## Hash Tables
 
@@ -82,6 +83,7 @@ Algorithmic training - solving problems and taking notes.
 - [x] [Lowest Common Ancestor of a BST](./trees/lowers-common-ancestor-of-a-binary-search-tree/) - BST property shortcut
 - [x] [Binary Tree Right Side View](./trees/binary-tree-right-side-view/) - DFS right-first, depth tracking
 - [x] [Validate Binary Search Tree](./trees/validate-binary-search-tree/) - range passing top-down
+- [x] [Diameter of Binary Tree](./random-problems/diameter-of-binary-search/) - DFS post-order, max(left+right)
 
 ## Graphs
 
@@ -105,6 +107,7 @@ Algorithmic training - solving problems and taking notes.
 - [x] [Longest Increasing Subsequence](./dynamic-programming/longest-increasing-subsequence/) - DP O(n²), ending at i
 - [x] [Jump Game](./dynamic-programming/jump-game/) - greedy, track max reach
 - [x] [Word Break](./random-problems/word-break/) - DP on string prefixes, O(n²)
+- [x] [Partition Equal Subset Sum](./random-problems/partition-equal-subset-sum/) - 0/1 knapsack DP, target = total/2
 
 ## Greedy
 
@@ -124,6 +127,7 @@ Algorithmic training - solving problems and taking notes.
 - [x] [Kth Largest Element in Array](./heap/kth-largest-element-in-array/) - min-heap of size k, QuickSelect alternative
 - [x] [K Closest Points to Origin](./heap/k-closest-points-to-origin/) - max-heap, squared distance
 - [x] [Task Scheduler](./heap/task-scheduler/) - max-heap + cooldown queue, greedy formula
+- [x] [Find Median from Data Stream](./random-problems/find-median-from-data-stream/) - two heaps (max + min), balanced
 
 ## Trie
 
