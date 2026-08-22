@@ -16,6 +16,8 @@ Algorithmic training - solving problems and taking notes.
 - [x] [Longest Substring Without Repeating Characters](./arrs-and-strs/longest-substring-without-repeating-characters/) - sliding window, map of positions
 - [x] [Longest Palindromic Substring](./arrs-and-strs/longest-palindromic-substring/) - expand around center
 - [x] [Majority Element](./random-problems/majority-element/) - Boyer-Moore voting, hash map
+- [x] [Add Binary](./random-problems/add-binary/) - digit-by-digit, carry, from the end
+- [x] [Spiral Matrix](./random-problems/spiral-matrix/) - four boundaries, spiral traversal
 
 ## Hash Tables
 
@@ -35,6 +37,7 @@ Algorithmic training - solving problems and taking notes.
 - [x] [Merge Sorted Array](./two-pointers/merge-sorted-array/) - three pointers from the end
 - [x] [3Sum](./two-pointers/sum-3/) - sort + two pointers, hash map
 - [x] [Container With Most Water](./two-pointers/container-with-most-water/) - two pointers greedy
+- [x] [Trapping Rain Water](./random-problems/trapping-rain-water/) - two pointers, leftMax/rightMax
 
 ## Sliding Window
 
@@ -84,6 +87,8 @@ Algorithmic training - solving problems and taking notes.
 - [x] [Binary Tree Right Side View](./trees/binary-tree-right-side-view/) - DFS right-first, depth tracking
 - [x] [Validate Binary Search Tree](./trees/validate-binary-search-tree/) - range passing top-down
 - [x] [Diameter of Binary Tree](./random-problems/diameter-of-binary-search/) - DFS post-order, max(left+right)
+- [x] [Balanced Binary Tree](./random-problems/balanced-binary-tree/) - DFS post-order, height + flag
+- [x] [Serialize and Deserialize Binary Tree](./random-problems/serialize-and-deserialize-binary-tree/) - BFS, nil markers, trim trailing #
 
 ## Graphs
 
