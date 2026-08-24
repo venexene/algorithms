@@ -18,6 +18,7 @@ Algorithmic training - solving problems and taking notes.
 - [x] [Majority Element](./random-problems/majority-element/) - Boyer-Moore voting, hash map
 - [x] [Add Binary](./random-problems/add-binary/) - digit-by-digit, carry, from the end
 - [x] [Spiral Matrix](./random-problems/spiral-matrix/) - four boundaries, spiral traversal
+- [x] [Sort Colors](./random-problems/sort-colors/) - Dutch National Flag, three pointers
 
 ## Hash Tables
 
@@ -89,6 +90,9 @@ Algorithmic training - solving problems and taking notes.
 - [x] [Diameter of Binary Tree](./random-problems/diameter-of-binary-search/) - DFS post-order, max(left+right)
 - [x] [Balanced Binary Tree](./random-problems/balanced-binary-tree/) - DFS post-order, height + flag
 - [x] [Serialize and Deserialize Binary Tree](./random-problems/serialize-and-deserialize-binary-tree/) - BFS, nil markers, trim trailing #
+- [x] [Construct Binary Tree from Preorder and Inorder Traversal](./random-problems/construct-binary-tree-from-preorder-and-inorder/) - recursion + index map
+- [x] [Kth Smallest Element in a BST](./random-problems/kth-smallest-element-in-a-bst/) - in-order traversal
+- [x] [Lowest Common Ancestor of a Binary Tree](./random-problems/lowest-common-ancestor-of-a-binary-tree/) - recursive DFS
 
 ## Graphs
 
@@ -100,6 +104,7 @@ Algorithmic training - solving problems and taking notes.
 - [x] [Pacific Atlantic Water Flow](./graphs/pacific-atlantic-water-flow/) - two DFS from borders, reverse direction
 - [x] [Rotting Oranges](./random-problems/rotting-oranges/) - multi-source BFS by levels
 - [x] [01 Matrix](./random-problems/01-matrix/) - multi-source BFS from all zeros
+- [x] [Accounts Merge](./random-problems/accounts-merge/) - union-find (DSU), email components
 
 ## Dynamic Programming
 
